@@ -25,7 +25,7 @@ See the [CONFIGURATION.md][CONFIGURATION.md] for more details.
 [[inputs.processes]]
   ## Use sudo to run ps command on *BSD systems. Linux systems will read
   ## /proc, so this does not apply there.
-  use_sudo = false
+  # use_sudo = false
 ```
 
 Another possible configuration is to define an alternative path for resolving
@@ -93,6 +93,6 @@ Linux  FreeBSD  Darwin  meaning
 
 ## Example Output
 
-```shell
+```text
 processes blocked=8i,running=1i,sleeping=265i,stopped=0i,total=274i,zombie=0i,dead=0i,paging=0i,total_threads=687i 1457478636980905042
 ```

@@ -23,6 +23,10 @@ See the [CONFIGURATION.md][CONFIGURATION.md] for more details.
   password = "mypassword"
   secret = "mysecret"
 
+  ## Request source server IP, normally the server running telegraf.
+  ## This corresponds to Radius' NAS-IP-Address.
+  # request_ip = "127.0.0.1"
+
   ## Maximum time to receive response.
   # response_timeout = "5s"
 ```
@@ -39,6 +43,6 @@ See the [CONFIGURATION.md][CONFIGURATION.md] for more details.
 
 ## Example Output
 
-```shell
+```text
 radius,response_code=Access-Accept,source=hostname.com,source_port=1812 responsetime_ms=311i 1677526200000000000
 ```
